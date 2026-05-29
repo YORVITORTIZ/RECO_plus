@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RECO+ | Guía</title>
+  <link rel="stylesheet" href="paginaguia style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar">
+    <div class="navbar__logo">
+      <div class="logo-icon">
+        <!----
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="38" height="38">
+          <circle cx="20" cy="20" r="19" stroke="#2e7d32" stroke-width="2"/>
+          <path d="M20 8 C14 8 10 13 12 18 L16 18 L13 23 L20 23 L17 18 L21 18 C23 14 21 10 20 8Z" fill="#2e7d32"/>
+          <path d="M26 14 C30 17 30 23 26 26 L24 22 L22 28 L28 28 L26 24 C31 21 31 15 26 14Z" fill="#2e7d32"/>
+          <path d="M14 26 C10 23 10 17 14 14 L16 18 L18 12 L12 12 L14 16 C9 19 9 25 14 26Z" fill="#2e7d32"/>
+        </svg>
+      -->
+      </div>
+      <div class="logo-text">
+        <span class="logo-name"><img src="img/logo png nombre.png" alt="logo"><span class="logo-plus"></span></span>
+        <span class="logo-tagline"></span>
+      </div>
+    </div>
+
+    <nav class="navbar__links">
+      <a href="index.html">Inicio</a>
+      <a href="mapa.html">Mapa</a>
+      <a href="guia.html" class="active">Guía</a>
+      <a href="donar.html">Donar / Ayuda</a>
+      <a href="blog.html">Blog</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <button class="navbar__cta">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-7 8a7 7 0 1114 0H3z"/></svg>
+      Únete
+    </button>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Guía</h1>
+      <p class="hero__subtitle">
+        Todo lo que necesitas saber para conectar,<br>
+        reciclar y transformar tu comunidad.
+      </p>
+      <div class="hero__divider"></div>
+      <div class="hero__badge">
+        <span class="badge-leaf"><img src="img/reciclaje.png" alt="reciclaje"></span>
+        Aprende, actúa y genera impacto positivo.
+      </div>
+    </div>
+    <div class="hero__illustration">
+      <!-- Decorative green blob + floating icons -->
+      <div class="hero__blob"></div>
+      <div class="hero__float-icons">
+        <span class="float-icon fi--recycle"><img src="img/reciclaje.png" alt="reciclaje"></span>
+        <span class="float-icon fi--pin"><img src="img/ubicacion v2.png" alt="ubicación"></span>
+        <span class="float-icon fi--heart"><img src="img/corazon.png" alt="corazón"></span>
+      </div>
+      <div class="hero__book">
+        <div class="book-cover"></div>
+        <div class="book-pages"></div>
+        <div class="book-plant">🌱</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STEPS INTRO ========== -->
+  <section class="steps-intro">
+    <p class="steps-intro__text">
+      <img src="img/librito con hoja.png" alt="librito con hoja"> <strong>Explora nuestras guías prácticas en solo <span class="highlight">3 pasos clave</span></strong>
+      <span class="steps-intro__wave">〰</span>
+    </p>
+  </section>
+
+  <!-- ========== GUIDE CARDS ========== -->
+  <section class="cards">
+
+    <!-- Card 1 -->
+    <article class="card">
+      <div class="card__header">
+        <span class="card__number">1</span>
+        <span class="card__icon"><img src="img/ubicacion v2.png" alt="ubicación"></span>
+        <h2 class="card__title">Cómo encontrar<br>puntos de reciclaje</h2>
+      </div>
+      <p class="card__desc">
+        Descubre cómo ubicar centros de reciclaje cercanos y contribuir al cuidado del planeta.
+      </p>
+      <ul class="card__list">
+        <li>✅ Usa el mapa interactivo</li>
+        <li>✅ Filtra por tipo de material</li>
+        <li>✅ Obtén direcciones y horarios</li>
+      </ul>
+      <a href="mapa.html" class="card__link">Ver guía completa →</a>
+      <div class="card__illustration card__illustration--phone">
+        <div class="phone-mockup">
+          <div class="phone-screen"><img src="img/celular con ubicacion.png" alt="ubicación"></div>
+        </div>
+        <div class="card__deco-leaf"></div>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="card">
+      <div class="card__header">
+        <span class="card__number">2</span>
+        <span class="card__icon"><img src="img/corazon.png" alt="corazon"></span>
+        <h2 class="card__title">Cómo donar o<br>solicitar ayuda</h2>
+      </div>
+      <p class="card__desc">
+        Conecta con tu comunidad donando objetos o pidiendo ayuda cuando lo necesites.
+      </p>
+      <ul class="card__list">
+        <li>✅ Publica tu solicitud o donación</li>
+        <li>✅ Conecta con personas cercanas</li>
+        <li>✅ Genera impacto social</li>
+      </ul>
+      <a href="guia-donar.html" class="card__link">Ver guía completa →</a>
+      <div class="card__illustration card__illustration--box">
+        <div class="donation-box"><img src="img/caja.png" alt="caja"></div>
+        <div class="card__deco-leaf"></div>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="card">
+      <div class="card__header">
+        <span class="card__number">3</span>
+        <span class="card__icon"><img src="img/manos v2.png" alt="manos"></span>
+        <h2 class="card__title">Cómo pagar y obtener<br>beneficios premium</h2>
+      </div>
+      <p class="card__desc">
+        Conoce las opciones de pago disponibles y disfruta de beneficios exclusivos en Reco+.
+      </p>
+      <ul class="card__list">
+        <li>✅ Métodos de pago seguros</li>
+        <li>✅ Beneficios por ser premium</li>
+        <li>✅ Gestiona tu suscripción</li>
+      </ul>
+      <a href="#" class="card__link">Ver guía completa →</a>
+      <div class="card__illustration card__illustration--card">
+        <span class="credit-card"><img src="img/librito con hoja.png" alt="tarjeta de crédito"></span>
+        <div class="card__deco-leaf">🌿</div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ========== HELP BANNER ========== -->
+  <section class="help-banner">
+    <div class="help-banner__globe"><img src="img/mundo.png" alt="planeta"></div>
+    <div class="help-banner__text">
+      <h3 class="help-banner__title">¿Necesitas más ayuda?</h3>
+      <p class="help-banner__subtitle">
+        Estamos aquí para acompañarte en cada paso<br>hacia un mundo más sostenible.
+      </p>
+    </div>
+    <div class="help-banner__features">
+      <div class="help-feature">
+        <span class="help-feature__icon"><img src="img/mensaje.png" alt="mensaje"></span>
+        <span class="help-feature__label">Soporte<br>personalizado</span>
+      </div>
+      <div class="help-feature__divider"></div>
+      <div class="help-feature">
+        <span class="help-feature__icon"><img src="img/librito con hoja.png" alt="recursos"></span>
+        <span class="help-feature__label">Recursos y<br>tutoriales</span>
+      </div>
+      <div class="help-feature__divider"></div>
+      <div class="help-feature">
+        <span class="help-feature__icon"><img src="img/personas.png" alt="personas"></span>
+        <span class="help-feature__label">Comunidad<br>activa</span>
+      </div>
+    </div>
+    <a href="#" class="help-banner__cta">Ir a Centro de Ayuda →</a>
+  </section>
+
+</body>
+</html>

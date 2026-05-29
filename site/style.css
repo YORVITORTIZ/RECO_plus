@@ -1,0 +1,268 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: transparent;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.btn {
+    background: #4CAF50;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.10)),
+                url('img/imagen\ del\ fondo.png') center/cover;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    color: white;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-bottom: 20px;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    width: 70%;
+    border-radius: 20px 0 0 20px;
+}
+
+.search button {
+    padding: 10px 20px;
+    border: none;
+    background: #4CAF50;
+    color: white;
+    border-radius: 0 20px 20px 0;
+}
+
+
+.acciones {
+    padding: 50px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    align-items: ri;
+}
+
+.card {
+    background: #e6f4ea;
+    padding: 50px;
+    border-radius: 10px;
+    width: 500px;
+    height: 250px;
+    text-align: center;
+}
+
+.card a {
+    color: green;
+    text-decoration: none;
+}
+
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: #e6f4ea;
+    text-align: center;
+    font-weight: bold;
+}
+
+.stats span {
+    font-weight: normal;
+    font-size: 14px;
+}
+nav a:hover {
+    color: limegreen;
+    border-bottom: 2px solid limegreen;
+}
+.logo img {
+    width: 170px;
+    height: 40px;
+}
+
+
+.card1 {
+    position: relative;
+    text-align: center;
+}
+
+.card1 h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card1 p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ubicacion {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 15px;
+    top: 80px;
+}
+
+.escalones {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    right: 15px;
+    top: 80px;
+}
+
+.card1 a {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card2 {
+    position: relative;
+    text-align: center;
+}
+
+.card2 h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card2 p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.corazon {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 5px;
+    top: 80px;
+}
+
+.caja_de_juguetes {
+     width: 90px;
+    height: 90px;
+    position: absolute;
+    right: 5px;
+    top: 80px;
+}
+
+.mapa {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    right: 5px;
+    top: 80px;
+}
+
+.card2 a {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card3 {
+    position: relative;
+    text-align: center;
+}
+
+.card3 h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card3 p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.manos {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    left: 5px;
+    top: 80px;
+}
+
+.card3 a {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.stats img{
+    width: 50px;
+    height: 50px;
+    left: 5px;
+    bottom: 5px;
+}
+
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa de Reciclaje y Donación</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+ <header class="header">
+      <div class="logo"><img src="img/logo png nombre.png" alt=""></div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="mapa.html">Mapa</a>
+        <a href="guia.html">Guía</a>
+        <a href="donar.html">Donar / Ayuda</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <button class="btn">Únete</button>
+    </header>
+  <!-- HEADER -->
+ <header class="site-header">
+   
+    
+    <h1><br /> de reciclaje y donación</h1>
+    <div class="header-underline"></div>
+    <p class="subtitle">
+      Explora tu ciudad y encuentra puntos de reciclaje y donación cercanos.<br />
+      Usa los filtros para buscar por tipo de material o servicio.
+    </p>
+  </header>
+
+  <!-- SEARCH + FILTERS -->
+  <section class="controls">
+    <div class="search-bar">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="searchInput" placeholder="Buscar dirección o ubicación" />
+      <button class="locate-btn" title="Usar mi ubicación">&#128205;</button>
+    </div>
+
+    <div class="filter-bar">
+      <span class="filter-label">Filtrar por material:</span>
+      <div class="filter-chips" id="filterChips">
+        <button class="chip active" data-filter="todos">Todos</button>
+        <button class="chip" data-filter="plasticos">Plásticos</button>
+        <button class="chip" data-filter="papel">Papel</button>
+        <button class="chip" data-filter="vidrio">Vidrio</button>
+        <button class="chip" data-filter="metal">Metal</button>
+        <button class="chip" data-filter="ropa">Ropa</button>
+        <button class="chip" data-filter="electronicos">Electrónicos</button>
+        <button class="chip" data-filter="organicos">Orgánicos</button>
+      </div>
+      <button class="more-filters-btn">&#9776; Más filtros</button>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <!-- MAP -->
+    <div class="map-wrapper">
+      <div id="map"></div>
+
+      <!-- LEGEND -->
+      <div class="legend">
+        <div class="legend-item"><span class="legend-icon recycle"></span> Puntos de reciclaje</div>
+        <div class="legend-item"><span class="legend-icon donation"></span> Puntos de donación</div>
+        <div class="legend-item"><span class="legend-icon acopio"></span> Centros de acopio</div>
+        <div class="legend-item"><span class="legend-icon evento"></span> Eventos de reciclaje</div>
+      </div>
+
+      <!-- TOOLTIP -->
+      <div class="map-tooltip" id="mapTooltip">
+        <button class="tooltip-close" id="tooltipClose">&times;</button>
+        <div class="tooltip-icon">&#127807;</div>
+        <div class="tooltip-text">
+          <strong>¿Sabías qué?</strong>
+          <span id="tooltipFact">Reciclar 1 botella de plástico ahorra suficiente energía para iluminar una bombilla por 6 horas.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div>
+          <span class="sidebar-pin">&#128205;</span>
+          <strong>Cerca de ti</strong>
+          <p class="results-count">Mostrando <span id="resultCount">12</span> resultados</p>
+        </div>
+        <select class="sort-select" id="sortSelect">
+          <option>Más cercanos</option>
+          <option>Mejor valorados</option>
+          <option>Recientes</option>
+        </select>
+      </div>
+
+      <ul class="results-list" id="resultsList">
+        <!-- JS populated -->
+      </ul>
+
+      <button class="see-all-btn" id="seeAllBtn">Ver todos los resultados</button>
+    </aside>
+  </main>
+
+  <!-- FOOTER CTA -->
+  <footer class="footer-cta">
+    <div class="footer-left">
+      <span class="footer-leaf">&#127807;</span>
+      <div>
+        <strong>¿No encuentras un punto?</strong>
+        <p>Sugiérelo y ayuda a crecer nuestra comunidad.</p>
+      </div>
+    </div>
+    <button class="suggest-btn" id="suggestBtn">+ Sugerir un punto</button>
+  </footer>
+
+  <!-- MODAL: Suggest Point -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <h2>Sugerir un punto</h2>
+      <p>Ayúdanos a ampliar el mapa de reciclaje y donación.</p>
+      <input type="text" placeholder="Nombre del lugar" class="modal-input" />
+      <input type="text" placeholder="Dirección" class="modal-input" />
+      <select class="modal-input">
+        <option>Tipo de punto</option>
+        <option>Reciclaje</option>
+        <option>Donación</option>
+        <option>Acopio</option>
+        <option>Evento</option>
+      </select>
+      <textarea class="modal-input" placeholder="Comentarios adicionales..." rows="3"></textarea>
+      <button class="modal-submit">Enviar sugerencia</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
